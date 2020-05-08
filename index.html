@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Boaz Medical</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel=”stylesheet” href=”http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css“> <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Nanum+Myeongjo:400,700,800&display=swap&subset=korean"
+    rel="stylesheet">
+
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    a {
+      font-family: "Nanum Gothic";
+    }
+
+    a.menu {
+      margin-right: 2rem;
+      font-size: 1.6rem;
+      margin-top: 1rem;
+
+    }
+
+    .Gothic {
+      font-family: "Nanum Gothic";
+    }
+
+    .Myeongjo {
+      font-family: "Nanum Myeongjo";
+    }
+
+    .jumbotron {
+      background-image: url('img/1.jpeg');
+      background-size: cover;
+      text-shadow: black 0.2em 0.2em 0.2em;
+      color: white;
+    }
+
+
+    span.top {
+      margin-left: 12rem;
+      font-size: 1.5rem;
+    }
+
+    img.first {
+      width: 45rem;
+      height: 37rem;
+    }
+
+    p.content {
+      font-size: 1.8rem;
+    }
+
+    .location2 {
+      font-size: 1.2rem;
+    }
+
+    li {
+      font-size: 1.5rem;
+    }
+
+
+    .container2 {
+      padding: 80px 90px;
+    }
+
+    .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+    }
+
+    .person:hover {
+      border-color: #f1f1f1;
+    }
+
+    .carousel-inner img {
+      /* -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);  */
+      /* width: 49%; */
+      width: 75%;
+      /* Set width to 100% */
+      margin: auto;
+    }
+
+    .carousel-caption h3 {
+      color: #fff !important;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+      }
+    }
+
+    .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+    }
+
+    .bg-1 h3 {
+      color: #fff;
+    }
+
+    .bg-1 p {
+      font-style: italic;
+    }
+
+    .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+    }
+
+    .thumbnail p {
+      margin-top: 15px;
+      /* color: #555; */
+    }
+
+
+    .nav-tabs li a {
+      color: #777;
+    }
+
+
+    .navbar {
+      font-family: "Nanum Myeongjo";
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+    }
+
+    .navbar-nav li a:hover {
+      color: #fff !important;
+    }
+
+    .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+    }
+
+    .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+    }
+
+    .dropdown-menu li a {
+      color: #000 !important;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: red !important;
+    }
+
+    footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      /* padding: 32px; */
+    }
+
+    footer a {
+      color: #f5f5f5;
+    }
+
+    /* footer a:hover {
+      color: #777;
+      text-decoration: none;
+    } */
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    textarea {
+      resize: none;
+    }
+  </style>
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- 4번 <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgb(52, 29, 8)"> 75, 40, 10-->
+  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgb(75, 40, 10); height: 7rem">
+    <!-- <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgb(99, 51, 9)"> -->
+    <div class="container-fluid text-center">
+      <div class="navbar-header ">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/18.png" alt="보아스 메디컬"
+            style="width:15rem; margin-left: 10rem; margin-top: 0.6rem "></a>
+        <!-- <nav <a class="navbar-brand Myeongjo js-scroll-trigger" href="#page-top" style="margin-left: 10rem; font-size: 2.2rem">보아스 메디컬</a></nav> -->
+      </div>
+      <div class="collapse navbar-collapse text-center" style="height: 7rem" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" style="margin-right: 10rem; height: 7rem">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger menu text-center" href="#introduction" style="height: 5rem">병원 소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger menu text-center" href="#doctor" style="height: 5rem">의료진 소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger menu text-center" href="#time" style="height: 5rem">진료시간</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger menu text-center" href="#way" style="height: 5rem">오시는길</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger menu text-center" href="#qna" style="height: 5rem">문의하기</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 7rem; height: 65rem"> -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 7rem;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3" href="#myModal"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/20.png" alt="New York" width="1rem" height="1rem">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/24.png" alt="Chicago" width="1rem" height="1rem">
+        <div class="carousel-caption">
+          <!-- <h3>Chicago</h3>
+          <p>Thank you, Chicago - A night we won't forget.</p> -->
+        </div>
+      </div>
+      <!--19-->
+      <div class="item">
+        <img src="img/vaccine.png" alt="Los Angeles" width="1rem" height="1rem" href="#myModal">
+        <div class="carousel-caption">
+          <!-- <h3>LA</h3>
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p> -->
+        </div>
+      </div>
+
+      <div class="item text-center">
+        <!-- <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal"
+          style="margin-top: 20rem; width: 30rem; height: 30rem;">
+          BMI 검사
+        </button> -->
+        <img src="img/BMI2.png" data-toggle="modal" data-target="#myModal">
+        <!-- <button type="button" class="btn" data-toggle="modal" data-target="#myModal"> -->
+          <!-- <img src="img/BMI.png" > -->
+        <!-- </button> -->
+        <!-- <img src="img/26.png" data-toggle="modal" data-target="#myModal"> -->
+        <!-- <img src="img/19.png" alt="Los Angeles" width="1rem" height="0.2rem" href="#myModal"> -->
+        <!-- <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal" style="margin-top: 20rem; width: 30rem; height: 30rem;">
+              BMI 검사
+            </button> -->
+
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <br id="introduction">
+  <hr>
+  <hr><br>
+
+
+
+  <h1 class="text-center Myeongjo">병원 소개</h1>
+  <hr style="width: 20rem; color: black; size: 1rem">
+  <div class="container container2">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="first" src="img/Hall.jpg" width=300 height=160 class="rounded">
+      </div><br>
+      <div class="col-md-6">
+        <h1 class="Myeongjo">최고의 접근성</h1><br><br>
+        <p class="content" style="margin-left: 1rem">한동대학교 내에 위치한 보아스 메디컬은 언제든 한동인들의 건강을 책임집니다.</p><br>
+        <p class="content" style="margin-left: 1rem">(Boaz Medical is responsible for the health of Handong people at
+          any time by being located within Handong University.)</p>
+        <!-- <p class="content">&nbsp;&nbsp;&nbsp;&nbsp;보아스 메디컬은 한동대학교 내에 위치함으로서 언제든 한동인들의 건강을 책임집니다.</p> -->
+      </div>
+    </div>
+    <br>
+    <hr><br><br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="first" src="img/13.jpeg" width=300 height=160 class="rounded">
+      </div><br>
+      <div class="col-md-6">
+        <h1 class="Myeongjo">저렴한 예방접종</h1><br><br>
+        <p class="content" style="margin-left: 1rem">보아스 메디컬은 예방접종이 가장 저렴한 병원입니다.<br>(종목 : 독감, A형
+          간염, 파상풍, 대상포진, 자궁경부암)</p><br>
+        <p class="content" style="margin-left: 1rem">(We guarantee that Boaz Medical offers the most affordable service.
+          <br>(Sort: Flu, Hepatitis A, Tetanus, Shingles, Cervical Cancer))</p>
+      </div>
+    </div>
+    <br>
+    <hr><br><br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="first" src="img/11.jpeg" width=300 height=160 class="rounded">
+      </div>
+      <div class="col-md-6"><br>
+        <h1 class="Myeongjo">보아스의 마음으로</h1><br><br>
+        <p class="content" style="margin-left: 1rem">기독교 상담 또한 전공하신 원장 선생님께서 우울, 불안, 공황 등 심리적 고충도 함께 합니다.</p><br>
+        <p class="content" style="margin-left: 1rem">(The doctor who also majored in Christian counseling has empathy in
+          psychological difficulties such as depression, anxiety and panic.)</p>
+      </div>
+    </div>
+    <br>
+    <hr><br><br>
+
+    <h1 class="text-center Myeongjo">부대 시설</h1>
+    <hr style="width: 20rem; color: black; size: 1rem">
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class="Myeongjo text-center">
+          <strong>
+            <보건실>
+          </strong>
+        </h4>
+        <img class="first" src="img/10.jpeg" width=200rem; height=90rem; class="rounded">
+      </div>
+      <div class="col-md-6">
+        <h4 class="Myeongjo text-center">
+          <strong style="margin-right: 3rem">
+            <인바디 및 각종 기구>
+          </strong>
+        </h4>
+        <img class="first" src="img/2.jpeg" width=200rem; height=90rem; class="rounded">
+      </div>
+    </div>
+    <br><br><br id="doctor">
+    <hr>
+    <hr><br><br>
+
+    <h1 class="text-center Myeongjo">의료진 소개</h1>
+    <hr style="width: 20rem; color: black; size: 1rem">
+    <br>
+    <div class="row">
+      <div class="col-md-6"><br>
+        <img class="rounded-circle" style="width: 35rem; height:35rem; border-radius: 50%;" src="img/원장님.png">
+        <br><br>
+        <p class="text-center Myeongjo" style="margin-right: 10rem; font-size: 2.8rem">
+          <font class="" style="font-size: 2.2rem; color:rgb(124, 123, 123);">원장&nbsp;</font>고준태
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h4 class="Myeongjo text-center" style="color: rgb(124, 123, 123); margin-right:10rem;">
+          <학 력>
+        </h4>
+        <ul>
+          <li>서울대학교 의과대학 졸업 (1991) 의사 43560호</li>
+          <li>미국 HIS University 기독교 상담학 석사 (2008)</li>
+        </ul><br>
+
+        <h4 class="Myeongjo text-center" style="color: rgb(124, 123, 123); margin-right:8rem">
+          <주요 경력>
+        </h4>
+        <ul>
+          <li>인턴, 전공의 서울대학교병원 (1991-1995) </li>
+          <li>소아청소년과 전문의 (2836호)</li>
+          <li>소아 심장 세부전문의 (70호)</li>
+          <li>포항 선린병원 소아청소년과 과장 2003 – 2011</li>
+
+        </ul><br>
+
+        <h4 class="Myeongjo text-center" style="color: rgb(124, 123, 123); margin-right:10rem">
+          <현 재>
+        </h4>
+        <ul>
+          <li>포항 여성아이병원 소아청소년과 전문의 및 <br>한동대학교 보아스메디컬 의원 원장 (겸직) </li>
+          <li>성균관 의과대학교 삼성서울병원 외래 교수</li>
+          <li>한동대학교 창의 융합 교육원 객원교수</li>
+        </ul><br>
+
+      </div>
+    </div>
+    <br>
+    <hr><br><br>
+
+
+    <h1 class="text-center Myeongjo">Interview</h1>
+    <hr style="width: 20rem; color: black; size: 1rem">
+
+    <div class="text-center" style="border: rgb(163, 162, 162) solid 1px">
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.handong.edu/handongin/56/sub01.html" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+
+    <div class="text-center">
+
+    </div>
+    <br><br><br id="time">
+    <hr>
+    <hr><br><br>
+
+
+
+
+
+    <h1 class="text-center Myeongjo">진료 시간</h1>
+    <hr style="width: 20rem; color: black; size: 1rem">
+    <div class="text-center">
+      <img src="img/26.png" style="border: snow solid 1px; width: 85rem;">
+    </div>
+
+    <br id="way">
+    <hr>
+    <hr><br><br>
+
+    <h1 class="text-center Myeongjo">오시는 길</h1>
+    <hr style="width: 20rem; color: black; size: 1rem">
+    <div class="row">
+      <div class="col-md-6"><br>
+        <div class="img-container">
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1611.8024392833859!2d129.39028515354843!3d36.10311872580605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35671cba9049e863%3A0x1f06d59d33aeb1e7!2z67O07JWE7Iqk66mU65SU7Lus7J2Y7JuQ!5e0!3m2!1sen!2skr!4v1572183001883!5m2!1sen!2skr"
+            width="450rem" height="400rem" frameborder="0" style="margin-right: 5rem"></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 location2"><br><br>
+        <div class="location" style="margin-left: 2rem;">
+          <address style="font-size: 2rem">
+            <i class="fas fa-map-marker-alt"></i> <strong style="font-size: 2.3rem">&nbsp;보아스메디컬센터</strong><br>
+            <em style="font-size: 1.6rem">한동대학교 복지관 3층<br>
+              경상북도 포항시 북구 흥해읍 한동로 558</em><br><br><br>
+            <i class="fas fa-phone"></i><abbr title="phone"></abbr> &nbsp;054-260-3021~2
+          </address>
+        </div><br><br>
+
+        <div class="location" style="margin-left: 2rem; font-size: 1.6rem">
+          <p><i class="fas fa-car" style="font-size: 2.3rem"></i><strong
+              style="font-size: 2.3rem">&nbsp;&nbsp;주차안내</strong><br>
+            한동대학교 주차장에 무료주차 가능합니다.</p>
+
+        </div>
+      </div>
+    </div>
+    <br>
+    <br><br id="qna">
+    <hr>
+    <hr><br><br>
+
+    <h1 class="text-center Myeongjo">문의하기 </h1>
+    <hr style="width: 20rem; color: black; size: 1rem;">
+    <div class="row" style="margin-top: 7rem">
+      <div class="col-sm-6 -formgroup">
+        <a class="text-left" style="color: gray; font-size: 1.8rem">
+          이&nbsp;&nbsp;름
+        </a>
+        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <a class="text-left" style="color: gray; font-size: 1.8rem">
+          E-mail
+        </a>
+        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+      </div>
+    </div>
+    <a class="text-left" style="color: gray; font-size: 1.8rem">
+      제&nbsp;&nbsp;목
+    </a>
+    <textarea class="form-control" id="title" name="title" placeholder="Title" rows="5"></textarea>
+    <br>
+    <a class="text-left" style="color: gray; font-size: 1.8rem">
+      내&nbsp;&nbsp;용
+    </a>
+    <textarea class="form-control" id="contents" name="contents" placeholder="Contents" rows="5"></textarea>
+    <br>
+    <div class="row" style="color: gray; font-size: 1.8rem; margin-left: 0.1rem">
+      <a style="color: gray">※ 문의 주시면 24시간 이내에 원장님께서 직접 메일로 답변해 드립니다.</a>
+    </div>
+    <br>
+    <form onsubmit="validateForm()">
+      <input type="submit" value="Send">
+    </form>
+    <div class="row">
+
+      <div class="col-md-12 form-group">
+
+        <!-- <button class="btn pull-left" type="submit" style="border: solid 1px gray">Send</!-->
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal" name="mymodal" >
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content" style="margin-top: 5rem">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <!-- <div class="row">
+                <h1 class="modal-title ">BMI 검사   </h1>
+                
+            </div> -->
+          <h1 class="modal-title ">BMI 검사 <button type="button" class="close" data-dismiss="modal"
+              style="height: 5rem">x</button></h1>
+
+
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h3>BMI란?</h3>
+          <p>&nbsp;&nbsp;신체질량지수란 신장과 체중의 비율을 사용한 체중의 객관적인 지수로 일반적인 사람의 체지방량과 상관관계가 크다고 증명되었다. 체지방은 인체에 있는 지방을 지칭하고,
+            체지방량을 비율로 나타낸 것을 체지방률(percent body fat)이라고 한다. 체지방은 내장지방과 피하지방으로 나눌 수 있는데, 평균적인 남자의 체지방률은 15-20%이고, 여성의
+            체지방률은 20-25%이다. 신체질량지수는 비만을 측정하는 방법으로 사용된다.
+            [네이버 지식백과]</p>
+          <p>(저체중 : BMI ~18, 정상 : BMI 18~23, 과체중 : BMI 23~27.5, 비만 : BMI 27.5~32.5, 고도비만 : BMI 32.5~45, 초고도비만 : 45 이상)
+          </p>
+          <hr>
+
+          <a class="text-left" style="color: gray; font-size: 1.8rem">
+            키를 입력하세요.
+          </a>
+          <textarea class="form-control" id="BMI_height" name="BMI_height" placeholder="Height"></textarea>
+          <br>
+          <a class="text-left" style="color: gray; font-size: 1.8rem">
+            몸무게를 입력하세요.
+          </a>
+          <textarea class="form-control" id="BMI_weight" name="BMI_weight" placeholder="Weight"></textarea>
+          <br>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer text-center">
+          <button type="button" onclick="checkBMI()" class="btn btn-success" data-dismiss="modal">확인하기</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer style="width: 100%; height: 10rem;  background: rgb(96, 97, 109);">
+    <div class="container" style="width: 100%;">
+      <br>
+      <div class="row">
+        <div class="col-sm-3" style="text-align: center">
+          <h5>Copyright &copy; 2019</h5>
+          <h5>AppProgramming_Team1</h5>
+        </div>
+        <div class="col-sm-2" style="text-align: center">
+          <h5>21400707</h5>
+          <h5>정희석</h5>
+        </div>
+        <div class="col-sm-2" style="text-align: center">
+          <h5>21500532</h5>
+          <h5>이윤지</h5>
+        </div>
+        <div class="col-sm-2" style="text-align: center">
+          <h5>21600835</h5>
+          <h5>석진영</h5>
+        </div>
+        <div class="col-sm-2" style="text-align: center">
+          <h5>21900627</h5>
+          <h5>장민용</h5>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function validateForm() {
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var title = $("#title").val();
+      var contents = $("#contents").val();
+      var check = 0;
+
+      if(name == "") {
+        alert("내용을 입력하세요 (이름)");
+        check = 1;
+      }
+      else if(email == "") {
+        alert("내용을 입력하세요 (이메일)");
+        check = 2;
+      }
+      else if(title == "") {
+        alert("내용을 입력하세요 (제목)");
+        check = 3;
+      }
+      else if(contents == "") {
+        alert("내용을 입력하세요 (내용)");
+        check = 4;
+      }
+      else if(check == 0) alert("메일을 성공적으로 전송했습니다");
+    }
+
+    function checkBMI() {
+      var height = parseFloat($("#BMI_height").val());
+      var weight = parseFloat($("#BMI_weight").val());
+      var bmi = (weight / height / height) * 10000;
+      bmi = bmi.toFixed(1);
+
+      if (bmi == "NaN") {
+        alert("숫자를 입력해주세요");
+      } else {
+        if (bmi <= 18) alert("BMI : " + bmi + ", 저체중입니다.");
+        else if (bmi <= 23) alert("BMI : " + bmi + ", 정상체중입니다.");
+        else if (bmi <= 27.5) alert("BMI : " + bmi + ", 과체중입니다.");
+        else if (bmi <= 32.5) alert("BMI : " + bmi + ", 비만입니다.");
+        else if (bmi <= 45) alert("BMI : " + bmi + ", 고도비만입니다.");
+        else alert("BMI : " + bmi + ", 초고도비만입니다.");
+      }
+
+    }
+
+  </script>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
